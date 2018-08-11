@@ -1,0 +1,1 @@
+This is a website which allows users to practice scoring [riichi mahjong](https://en.wikipedia.org/wiki/Japanese_Mahjong) hands.

@@ -1,0 +1,11 @@
+[x] Render a set of tiles in a row all standing up
+[x] Render a sideways tile with the draw type
+[x] Render a pon with an arbritrary discarding player
+[x] Render a chii (note: always left discarding player)
+[x] Render a closed kan
+[x] Render an open kan
+[] Render dora indicators
+
+* Show the correct han and fu
+* Show the correct score
+* Deal with akadora
