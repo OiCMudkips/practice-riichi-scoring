@@ -28,8 +28,12 @@
     width: 20%;
 }
 
+.tile_group.single_horizontal img {
+    width: 100%;
+}
+
 .tile_group img.horizontal { /* The called tile */
-    transform: translateY(12%) rotate(90deg); /* YOLO (I just messed around in Google DevTools to get 12%). */
+    transform: translateY(12%) rotate(-90deg); /* YOLO (I just messed around in Google DevTools to get 12%). */
 }
 
 .tile_group.pon_or_chii img.horizontal {
@@ -42,4 +46,12 @@
 
 .dora {
     margin: auto;
+}
+
+.winning_tile {
+    margin: auto;
+}
+
+.winning_tile .tile_group {
+    width: 60%;
 }
