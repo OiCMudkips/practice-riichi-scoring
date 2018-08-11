@@ -24,6 +24,10 @@
     width: 23.05%; /* Images are 219x293. 219/(219+219+219+293) = 23.05% */
 }
 
+.tile_group.dora_indicators img {
+    width: 20%;
+}
+
 .tile_group img.horizontal { /* The called tile */
     transform: translateY(12%) rotate(90deg); /* YOLO (I just messed around in Google DevTools to get 12%). */
 }
@@ -34,4 +38,8 @@
 
 .tile_group.open_kan img.horizontal {
     padding: 0px 3.9%; /* YOLO (I just messed around in Google DevTools to get 5%). */
+}
+
+.dora {
+    margin: auto;
 }
