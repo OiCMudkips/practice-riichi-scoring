@@ -51,7 +51,3 @@
 .winning_tile {
     margin: auto;
 }
-
-.winning_tile .tile_group {
-    width: 40%;
-}
