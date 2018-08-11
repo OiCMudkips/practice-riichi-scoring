@@ -4,7 +4,7 @@
 [x] Render a chii (note: always left discarding player)
 [x] Render a closed kan
 [x] Render an open kan
-[] Render dora indicators
+[x] Render dora indicators
 
 * Show the correct han and fu
 * Show the correct score
