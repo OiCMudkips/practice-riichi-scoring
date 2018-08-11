@@ -1,44 +1,37 @@
-.tile_row { /* The unrevealed tiles of a player's hand */
+.tile_group {
     margin: auto;
     display: flex;
 }
 
-.tile_row img.vertical {
-    height: 100%; /* This is needed because this makes the height of the image element the height of the scaled image visual, removing whitespace. */
-    width: 7.69%; /* A tile row contains at most 13 tiles; 1/13 = 7.69% */
-    object-fit: contain;
-}
-
-.shown_meld { /* Pons, chiis and kans. */
-    margin: auto;
-    display: flex;
-}
-
-.shown_meld img { /* Tile images */
+.tile_group img {
     height: 100%;
     object-fit: contain;
 }
 
-.shown_meld.pon_or_chii img {
+.tile_group.hand img {
+    width: 7.69%; /* A hand contains at most 13 tiles; 1/13 = 7.69% */
+}
+
+.tile_group.pon_or_chii img {
     width: 30%; /* Images are 219x293. 219/(219+219+293) = 29.96% */
 }
 
-.shown_meld.closed_kan img {
+.tile_group.closed_kan img {
     width: 25%;
 }
 
-.shown_meld.open_kan img {
+.tile_group.open_kan img {
     width: 23.05%; /* Images are 219x293. 219/(219+219+219+293) = 23.05% */
 }
 
-.shown_meld img.horizontal { /* The called tile */
+.tile_group img.horizontal { /* The called tile */
     transform: translateY(12%) rotate(90deg); /* YOLO (I just messed around in Google DevTools to get 12%). */
 }
 
-.shown_meld.pon_or_chii img.horizontal {
+.tile_group.pon_or_chii img.horizontal {
     padding: 0px 5%; /* YOLO (I just messed around in Google DevTools to get 5%). */
 }
 
-.shown_meld.open_kan img.horizontal {
+.tile_group.open_kan img.horizontal {
     padding: 0px 3.9%; /* YOLO (I just messed around in Google DevTools to get 5%). */
 }
