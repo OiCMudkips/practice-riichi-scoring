@@ -1,53 +1,43 @@
-.tile_group {
-    margin: auto;
-    display: flex;
+#page_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.tile_group img {
-    height: 100%;
-    object-fit: contain;
+#main_content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
 }
 
-.tile_group.hand img {
-    width: 7.69%; /* A hand contains at most 13 tiles; 1/13 = 7.69% */
+#main_hand_tile {
+  background-color: green;
+  grid-column: 1 / span 2;
 }
 
-.tile_group.pon_or_chii img {
-    width: 30%; /* Images are 219x293. 219/(219+219+293) = 29.96% */
+#winning_tile {
+  background-color: lightcoral;
 }
 
-.tile_group.closed_kan img {
-    width: 25%;
+#dora_indicators {
+  background-color: red;
+  grid-column: 1 / span 2;
 }
 
-.tile_group.open_kan img {
-    width: 23.05%; /* Images are 219x293. 219/(219+219+219+293) = 23.05% */
+#text_info {
+  background-color: purple;
+  grid-column: 1 / span 2;
 }
 
-.tile_group.dora_indicators img {
-    width: 20%;
+#han_fu_form {
+ background-color: blue;
 }
 
-.tile_group.single_horizontal img {
-    width: 100%;
+#score_form {
+  background-color: aquamarine;
 }
 
-.tile_group img.horizontal { /* The called tile */
-    transform: translateY(12%) rotate(-90deg); /* YOLO (I just messed around in Google DevTools to get 12%). */
-}
-
-.tile_group.pon_or_chii img.horizontal {
-    padding: 0px 5%; /* YOLO (I just messed around in Google DevTools to get 5%). */
-}
-
-.tile_group.open_kan img.horizontal {
-    padding: 0px 3.9%; /* YOLO (I just messed around in Google DevTools to get 5%). */
-}
-
-.dora {
-    margin: auto;
-}
-
-.winning_tile {
-    margin: auto;
+#revealed_melds {
+  background-color: orchid;
+  grid-area: 2 / 3 / 5 / 3;
 }

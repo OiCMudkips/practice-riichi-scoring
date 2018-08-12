@@ -1,0 +1,55 @@
+/* This file containts styling to make the tile images look correct. */
+
+.tile_group {
+    margin: auto;
+    display: flex;
+}
+
+.tile_group img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.tile_group.hand img {
+    width: 7.69%; /* A hand contains at most 13 tiles; 1/13 = 7.69% */
+}
+
+.tile_group.pon_or_chii img {
+    width: 30%; /* Images are 219x293. 219/(219+219+293) = 29.96% */
+}
+
+.tile_group.closed_kan img {
+    width: 25%;
+}
+
+.tile_group.open_kan img {
+    width: 23.05%; /* Images are 219x293. 219/(219+219+219+293) = 23.05% */
+}
+
+.tile_group.dora_indicators img {
+    width: 20%;
+}
+
+.tile_group.single_horizontal img {
+    width: 100%;
+}
+
+.tile_group img.horizontal { /* The called tile */
+    transform: translateY(12%) rotate(-90deg); /* YOLO (I just messed around in Google DevTools to get 12%). */
+}
+
+.tile_group.pon_or_chii img.horizontal {
+    padding: 0px 5%; /* YOLO (I just messed around in Google DevTools to get 5%). */
+}
+
+.tile_group.open_kan img.horizontal {
+    padding: 0px 3.9%; /* YOLO (I just messed around in Google DevTools to get 5%). */
+}
+
+.dora {
+    margin: auto;
+}
+
+.winning_tile {
+    margin: auto;
+}
