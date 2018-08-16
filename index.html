@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Sample Mahjong Tile Row</title>
+        <title>Practice Riichi Mahjong Scoring</title>
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="tile_styles.css" />
@@ -14,14 +14,37 @@
             <a href="/contact.html">Contact</a>
         </div>
         <div id="main_content">
-            <div id="main_hand_tile">
+            <div id="main_hand_tiles">
                 <h2>Closed Hand</h2>
+                <div class="tile_group hand">
+                    <img src="paiga/m1.jpg" />
+                    <img src="paiga/m2.jpg" />
+                    <img src="paiga/m3.jpg" />
+                    <img src="paiga/m3.jpg" />
+                    <img src="paiga/m3.jpg" />
+                    <img src="paiga/m4.jpg" />
+                    <img src="paiga/m0.jpg" />
+                    <img src="paiga/m6.jpg" />
+                    <img src="paiga/m7.jpg" />
+                    <img src="paiga/m8.jpg" />
+                </div>
             </div>
-            <div id="winning_tile">
+            <div id="winning_tile" class="winning_tile">
                 <h2>Winning Tile</h2>
+                <p>Tsumo from Dead Wall</p>
+                <div class="tile_group single_horizontal">
+                    <img class="horizontal" src="paiga/m6.jpg" />
+                </div>
             </div>
-            <div id="dora_indicators">
+            <div id="dora_indicators" class="dora">
                 <h2>Dora Indicators</h2>
+                <div class="tile_group dora_indicators">
+                    <img src="paiga/m3.jpg" />
+                    <img src="paiga/s1.jpg" />
+                    <img src="paiga/z7 chun.jpg" />
+                    <img src="paiga/z1 ton.jpg" />
+                    <img src="paiga/p8.jpg" />
+                </div>
             </div>
             <div id="text_info">
                 <h2>Wind Information</h2>
@@ -36,6 +59,23 @@
             </div>
             <div id="revealed_melds">
                 <h2>Revealed Melds</h2>
+                <div class="tile_group pon_or_chii">
+                    <img src="paiga/z2 nan.jpg" />
+                    <img class="horizontal" src="paiga/z2 nan.jpg" />
+                    <img src="paiga/z2 nan.jpg" />
+                </div>
+                <div class="tile_group closed_kan">
+                    <img src="paiga/back.jpg" />
+                    <img src="paiga/p5.jpg" />
+                    <img src="paiga/p5.jpg" />
+                    <img src="paiga/back.jpg" />
+                </div>
+                <div class="tile_group open_kan">
+                    <img class="horizontal" src="paiga/p5.jpg" />
+                    <img src="paiga/p5.jpg" />
+                    <img src="paiga/p5.jpg" />
+                    <img src="paiga/p5.jpg" />
+                </div>
             </div>
         </div>
     </body>
