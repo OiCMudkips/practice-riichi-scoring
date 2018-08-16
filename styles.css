@@ -25,7 +25,7 @@
 }
 
 #winning_tile .tile_group {
-  width: 13.57%;
+  width: 13.85%;
 }
 
 #dora_indicators {
@@ -51,13 +51,13 @@
 }
 
 #revealed_melds .tile_group.pon_or_chii {
-  width: 45.35%;
+  width: 46.15%;
 }
 
 #revealed_melds .tile_group.closed_kan {
-  width: 54.4%;
+  width: 55.4%;
 }
 
 #revealed_melds .tile_group.open_kan {
-  width: 59%;
+  width: 60.1%;
 }
